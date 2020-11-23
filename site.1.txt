@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트 분류</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+
+    <script>
+        $(function () {
+            /*속성선택탐색자*/
+            $("#wrap a[target]")
+                .css({ "color": "#f00" });
+
+            $("#wrap img[src$=png]")
+                .css({ "width": "75", "height": "25" });
+
+            $("#wrap img[src*=https]")
+                .css({ "width": "40", "height": "40" });
+
+            /*contents탐색선택자*/
+            $("#wrap").contents()
+                .css({ "border": "1px solid #000"});
+
+            $("#wrap").contents()
+                .css({ "text-align" : "center", "font-size" : "large"});
+
+            /*요소명선택자*/
+            $("a").css("text-decoration", "none"); /*하이퍼링크 밑줄 지우기*/
+
+            $("h2").css("color", "#008000");
+        });
+    </script>
+</head>
+
+<body>
+    <h1><a name="#top">사이트 분류</a></h1><br><br>
+    <div id="wrap">
+        <section>
+            <h2>검색엔진</h2>
+            <hr>
+            <p><strong><a href="http://www.google.co.kr" target="_self"><img
+                            src="http://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">&nbsp구글</a></strong>
+            </p>
+            <p><a href="http://www.bing.com"><img
+                        src="http://techrecipe.co.kr/wp-content/uploads/2020/10/201006_Microsoft-Bing_001.png">&nbsp빙</a>
+            </p>
+            <p><a href="http://naver.com"><img
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Naver_Logotype.svg/300px-Naver_Logotype.svg.png">&nbsp네이버</a>
+            </p>
+            <p><a href="http://daum.net"><img
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Daum_communication_logo.svg/1200px-Daum_communication_logo.svg.png">&nbsp다음</a>
+            </p>
+        </section>
+
+        <br><br>
+
+        <section>
+            <h2>소셜커머스</h2>
+            <hr>
+            <p><strong><a href="http://www.coupang.com" target="_self"><img
+                            src="http://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png">&nbsp쿠팡!</a></strong>
+            </p>
+            <p><a href="http://www.gmarket.co.kr"><img
+                        src="http://pics.gmarket.co.kr/pc/single/kr/common/image__logo.png">&nbsp지마켓</a></p>
+            <p><a href="http://www.tmon.co.kr"><img
+                        src="http://www.ntoday.co.kr/news/photo/201911/69560_41535_4424.png">&nbsp타임커머스 티몬</a></p>
+            <p><a href="http://www.11st.co.kr/main"><img
+                        src="http://m.11st.co.kr/MW/img/common/og_1200627.png">&nbsp11번가</a></p>
+            <p><a href="http://front.wemakeprice.com/main"><img
+                        src="http://view01.wemep.co.kr/wmp-main/15/201903/20/pmlm_n8cyjwtciedn.png">&nbsp위메프</a></p>
+        </section>
+
+        <br><br>
+
+        <section>
+            <h2>웹툰</h2>
+            <hr>
+            <p><strong><a href="http://comic.naver.com/webtoon/weekday.nhn" target="_self"><img
+                            src="https://ssl.pstatic.net/static/comic/favicon/webtoon_favicon_32x32.ico">&nbsp네이버웹툰</a></strong>
+            </p>
+            <p><a href="http://webtoon.daum.net"><img
+                        src="https://u1.daumcdn.net/webtoon/op/webtoon_home_text_ver_20190514.png">&nbsp다음 웹툰</a></p>
+            <p><a href="http://page.kakao.com/main"><img
+                        src="https://static-page.kakao.com/static/common/favicon.ico?046586f3c1d19fc67a2f1bd7165c9f63">&nbsp카카오페이지</a>
+            </p>
+            <p><a href="http://www.lezhin.com/ko"><img
+                        src="https://cdn.lezhin.com/files/assets/img/favicon.png">&nbsp레진코믹스</a></p>
+            <p><a href="http://www.toomics.com"><img
+                        src="https://www.topdaily.kr/news/photo/201805/50703_15176_414.jpg">&nbsp투믹스</a></p>
+        </section>
+    </div>
+    <br>
+    <a href="#top">위로</a>
+</body>
+
+</html>
