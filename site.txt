@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사이트 분류</title>
-    <script src="w11_jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
 
     <script>
         $(function () {
@@ -21,10 +21,15 @@
 
             /*contents탐색선택자*/
             $("#wrap").contents()
-                .css({ "border": "1px solid #000", "padding-left": "20px", "padding-right": "20px" });
+                .css({ "border": "1px solid #000"});
 
-            /*하이퍼링크 밑줄 지우기_요소명선택자*/
-            $("a").css("text-decoration", "none");
+            $("#wrap").contents()
+                .css({ "text-align" : "center", "font-size" : "large"});
+
+            /*요소명선택자*/
+            $("a").css("text-decoration", "none"); /*하이퍼링크 밑줄 지우기*/
+
+            $("h2").css("color", "#008000");
         });
     </script>
 </head>
@@ -33,7 +38,7 @@
     <h1><a name="#top">사이트 분류</a></h1><br><br>
     <div id="wrap">
         <section>
-            <h1>검색엔진</h1>
+            <h2>검색엔진</h2>
             <hr>
             <p><strong><a href="http://www.google.co.kr" target="_self"><img
                             src="http://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">&nbsp구글</a></strong>
@@ -52,7 +57,7 @@
         <br><br>
 
         <section>
-            <h1>소셜커머스</h1>
+            <h2>소셜커머스</h2>
             <hr>
             <p><strong><a href="http://www.coupang.com" target="_self"><img
                             src="http://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png">&nbsp쿠팡!</a></strong>
@@ -70,7 +75,7 @@
         <br><br>
 
         <section>
-            <h1>웹툰</h1>
+            <h2>웹툰</h2>
             <hr>
             <p><strong><a href="http://comic.naver.com/webtoon/weekday.nhn" target="_self"><img
                             src="https://ssl.pstatic.net/static/comic/favicon/webtoon_favicon_32x32.ico">&nbsp네이버웹툰</a></strong>
