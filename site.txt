@@ -87,8 +87,6 @@
             </p>
             <p><a href="http://www.lezhin.com/ko"><img
                         src="https://cdn.lezhin.com/files/assets/img/favicon.png">&nbsp레진코믹스</a></p>
-            <p><a href="http://www.toomics.com"><img
-                        src="https://www.topdaily.kr/news/photo/201805/50703_15176_414.jpg">&nbsp투믹스</a></p>
         </section>
     </div>
     <br>
